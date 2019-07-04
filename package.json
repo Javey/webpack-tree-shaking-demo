@@ -1,0 +1,20 @@
+{
+  "name": "webpack-tree-shaking-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm ./dist -rf && webpack && echo '=====test1.css=====' && cat dist/test1.css && echo '=====test2.css=====' && cat dist/test2.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "test2": "file:test2"
+  }
+}
