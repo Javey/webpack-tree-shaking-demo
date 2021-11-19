@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "rm ./dist -rf && webpack && echo '=====test1.css=====' && cat dist/test1.css && echo '=====test2.css=====' && cat dist/test2.css"
+    "test": "rm -rf ./dist && webpack && echo '=====test1.css=====' && cat dist/test1.css; echo '=====test2.css=====' && cat dist/test2.css; echo '==========test1.js==========' && cat dist/test1.js; echo '\n=============test2.js========' && cat dist/test2.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^3.0.0",
-    "mini-css-extract-plugin": "^0.7.0",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "test2": "file:test2"
-  }
+    "test2": "./test2"
+  },
+  "sideEffects": false
 }

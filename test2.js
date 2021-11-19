@@ -1,3 +1,3 @@
-import a from 'test2/a';
+import {test} from 'test2';
 
-a();
+test();

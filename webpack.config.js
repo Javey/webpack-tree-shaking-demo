@@ -22,9 +22,12 @@ module.exports = {
                     {loader: MiniCssExtractPlugin.loader},
                     'css-loader',
                 ],
-                sideEffects: true,
+                // sideEffects: true,
             }
         ]
+    },
+    optimization: {
+        sideEffects: true,
     },
     plugins: [
         new MiniCssExtractPlugin(),

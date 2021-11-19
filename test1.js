@@ -1,3 +1,3 @@
-import a from './test1/a';
+import {test} from './test1/index';
 
-a();
+test();
